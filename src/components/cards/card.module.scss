@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+   
+.container {
+    background-color: black;
+    color: white;
+    width: 30%;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+.imag {
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+}
+
+.imag:hover{
+    filter: grayscale(100%);
+}
+
+.container h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.desc {
+    background-color: rgba(0,0,0,0.5);
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;
+
+}
+.container:hover .desc{
+    max-height: 500px;
+    transition: all 2.2s;
+}
+
+@media (max-width:1150px){
+    .container{
+        width: 45%;
+    }
+}
+@media (max-width:800px){
+    .container{
+        width: 90%;
+    }
+}
+
+
